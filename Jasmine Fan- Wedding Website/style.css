@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+header{
+    font-family: 'Cedarville Cursive';
+    color: #F9F7F3;
+    background-color: #4E3D42;
+    padding-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+header .headerItemsLeft{
+    padding-left: 30px;
+}
+
+header .headerItemsLeft .headerItemL{
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+header .headerItemsRight{
+    padding-right: 50px;
+}
+
+header .headerItemsRight .headerItemR{
+    float: right;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+header .headerItemsRight .headerItemR .rItem{
+    color: #E3DBDB;
+    text-decoration: none;
+}
+
+body{
+    background-color: #E3DBDB;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body .bannerImage{
+    margin-top: 96px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+body .section1{
+    display: block;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+}
+
+body .section1 .introParagraphList {
+    font-family: 'Quicksand', sans-serif;
+    color:#4E3D42;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 0%;
+    width: 40%;
+    float: left;
+    font-size: 16px;
+}
+
+body .section1 .introParagraphList .introParagraph{
+    float: left;
+    display: block;
+}
+
+body .section1 .displayImage1{
+    float: right;
+    display: block;
+    padding-right: 5%;
+    width: 35%;
+}
+
+body .section2 {
+    position: relative; 
+    display: inline-block; 
+}
+
+body .section2 .displayImage2 {
+    width: 100%; 
+}
+
+body .section2 .textOverlay {
+    text-align: center;
+    font-size: 60px;
+    position: absolute; 
+    top: 20%; 
+    left: 0; 
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #F9F7F3; 
+    padding: 10%; 
+    width: 100%;
+    margin: 0;
+    transition: opacity 1s;
+    cursor: default;
+}
+
+body .section2 .textOverlay:hover {
+    opacity: 1;
+}
+
+body .section1 .displayImage2{
+    display: block;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+body .section3And4{
+    padding-bottom: 2%;
+}
+
+body .section3And4 .section3{
+    font-family: 'Quicksand', sans-serif;
+    color: #282727;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-left: 15%;
+}
+
+body .section3And4 .section3 .messageLeft .messageL{
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-right: 200px;
+    background-color: #FFFFFF;
+}
+
+body .section3And4 .section3 .messageLeft .sendButton{
+    padding-left: 10%;
+}
+
+body .section3And4 .section4{
+    font-family: 'Quicksand', sans-serif;
+    color: #282727;
+    float: right;
+    padding-right: 5%;
+    padding-top: 2%;
+    margin-right: 15%;
+}
+
+body .section3And4 .section4 .messageRight .messageR{
+    background-color: #FFFFFF;
+    padding: 10px;
+    padding-right: 400px;
+    padding-bottom: 200px;
+}
+
+/* CITATION: container code from Chat GPT */
+.container {
+    flex: 1; /* Allow the container to expand and take remaining space */
+    padding: 30px; /* Adjust this value to provide space between content and footer */
+}
+/* END CITATION*/
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #4E3D42;
+    color: #F9F7F3;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+footer .footerNav .footerItemL{
+    font-family: 'Cedarville Cursive';
+    font-size: 30px;
+    float: left;
+    padding-left: 30%;
+}
+
+footer .footerNav .footerItemR{
+    float: right;
+    padding-right: 30%;
+    padding-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:0.5;}
+}
+
+@media screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
+
+    header .headerItemsRight .headerItemR{
+        display: none;
+    }
+
+    body .bannerImage{
+        position: relative;
+        width: 100%;
+    }
+
+    body .section1 .introParagraphList .introParagraph{
+        display: block;
+        padding-right: 0%;
+        width: 250%;
+    }
+
+    body .section1 .introParagraphList{
+        padding-bottom: 44px;
+        padding-top: 0%;
+    }
+
+    body .section1 .displayImage1{
+        display: block;
+        padding-right: 0%;
+        width: 100%;
+    }
+
+    body .section2 .textOverlay {
+        text-align: center;
+        font-size: 30px;
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: #F9F7F3; 
+        padding: 17.9%; 
+        width: 100%;
+        margin: 0;
+    }
+
+    body .section3And4 .section4 .messageRight .messageR{
+        background-color: #FFFFFF;
+        padding: 10px;
+        padding-right: 230px;
+        padding-bottom: 200px;
+    }
+
+    footer{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    header{
+        width: 100%;
+    }
+
+    header .headerItemsRight .headerItemR{
+        display: none;
+    }
+
+    body .bannerImage{
+        position: relative;
+        width: 100%;
+    }
+
+    body .section1 .introParagraphList .introParagraph{
+        display: block;
+        padding-right: 0%;
+        width: 300%;
+    }
+
+    body .section1 .introParagraphList{
+        padding-bottom: 44px;
+        padding-top: 0%;
+    }
+
+    body .section1 .displayImage1{
+        display: block;
+        padding-right: 0%;
+        width: 100%;
+    }
+
+    body .section2 .textOverlay {
+        text-align: center;
+        font-size: 45px;
+        position: absolute; 
+        top: 7%; 
+        left: 0; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: #F9F7F3; 
+        padding: 15%; 
+        width: 100%;
+        margin: 0;
+    }
+
+    body .section3And4 .section4 .messageRight .messageR{
+        background-color: #FFFFFF;
+        padding: 10px;
+        padding-right: 250px;
+        padding-bottom: 200px;
+       
+    }
+
+    body .section3And4 .section3{
+        margin-left: 5%;
+    }
+
+    body .section3And4 .section4{
+        margin-right: 5%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
